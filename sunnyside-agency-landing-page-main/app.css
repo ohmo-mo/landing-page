@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --sodt-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --dark-desaturated-cyan: hsl(167, 40%, 24%);
+    --dark-blue: hsl(198, 62%, 26%);
+    --dark-moderate-cyan: hsl(168, 34%, 41%);
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-size: 18px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+
+/* font-family: 'Barlow', sans-serif; 600 */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
+/* font-family: 'Fraunces', serif; 700 900 */
+
+.banner {
+    height: 100vh;
+    background-image: url("images/desktop/image-header.jpg");
+    background-position: center bottom;
+    background-size: cover;
+}
+
+.header {
+    font-family: 'Barlow', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    padding: 40px;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    padding-right: 40px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.contact {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.contact:hover {
+    background-color: var(--dark-desaturated-cyan);
+    color: var(--white);
+}
+
+.title {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    color: var(--white);
+}
+
+.title img {
+    margin-top: 80px;
+}
+
+.sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Fraunces', serif;
+}
+
+.sections img {
+    max-width: 100%;
+    height: auto;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color: rgb(243, 241, 241);
+}
+
+.info-section h1{
+    padding-bottom: 40px;
+}
+
+.info-section p {
+    padding: 0 60px 80px;
+}
+
+.info-section a {
+    align-self: start;
+    padding-left:60px;
+    color: black;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.fruit-section {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 700px;
+    font-family: 'Fraunces', serif;
+}
+
+.cuise {
+    background-repeat: no-repeat;
+    background-image: url("images/desktop/image-graphic-design.jpg");
+}
+
+.orange {
+    background-repeat: no-repeat;
+    background-image: url("images/desktop/image-photography.jpg");
+}
+
+.fruit-section h3 {
+    padding-top: 400px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 1.4em;
+}
+
+.fruit-section p {
+    margin: 0 190px;
+    line-height: 1.2;
+}
+
+.testimonials > h2 {
+    color: var(--dark-grayish-blue);
+    text-align: center;
+    padding-bottom: 90px;
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+.flex-items {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 19px;
+    padding: 0 90px;
+    margin-bottom: 100px;
+}
+
+
+.client-img img {
+    border-radius: 50%;
+    width: 60px;
+    margin: 0 170px;
+    margin-bottom: 20px;
+    border: 2px solid var(--yellow);
+}
+
+.client-description {
+    font-family: 'Barlow', sans-serif;
+    width: 400px;
+    padding: 13px;
+}
+
+.client-info {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.client-info .job {
+    opacity:0.5;
+}
+
+.grid-pics img {
+    max-width: 100%;
+    height: auto;
+}
+
+.grid-pics {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    background-color: var(--very-dark-desaturated-blue);
+}
+
+footer .footer-title {
+    text-transform: lowercase;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.footer-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-media img {
+    cursor: pointer;
+    margin-right: 30px;
+}
